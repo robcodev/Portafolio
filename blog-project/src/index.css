@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Recoleta', Serif;
+    src: url('C:/Users/Usuario/Documents/RobertBlog/blog-project/src/assets/fonts/Recoleta-Regular.ttf');
+    font-weight: 400;
+
+}
+@font-face {
+    font-family: 'Recoleta Bold';
+    src: url('C:/Users/Usuario/Documents/RobertBlog/blog-project/src/assets/fonts/Recoleta-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "azo-mono", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "azo-mono", sans-serif;
+    font-weight: 300;
+}
+* {
+}
+
+html, body {
+    background-color: #FAF7EB;
+
+}
+
+p{
+    color: azure;
+}
+span{
+    color: azure;
+}
+.flechas{
+    width: 10%;
+}
