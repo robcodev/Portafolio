@@ -1,15 +1,15 @@
-import {Typewriter, useTypewriter} from "react-simple-typewriter";
+import {useTypewriter} from "react-simple-typewriter";
 
 
-export const Mecanografia = () => {
+export const Mecanografia = ({classname}) => {
     const [palabras] = useTypewriter({
         words: ['Diseñador Gráfico', 'Desarrollador Full Stack'],
         loop: false,
     })
     return <>
-        <div className={'basis-3/5 mt-2 w-full h-full'}>
+        <div className={classname}>
             <h1
-                className={'text-start text-4xl text-redRob font-serif font-bold fixed'}
+                className={'text-start text-3xl text-redRob font-serif font-bold text-wrap'}
             >
                 {palabras}
             </h1>

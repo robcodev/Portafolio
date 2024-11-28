@@ -1,7 +1,3 @@
-import {useState} from 'react'
-
-import miFoto1 from './assets/fondoRobert.webp'
-import miFoto2 from './assets/imgs/miFoto2.png'
 import ComponenteLineaAzul from './assets/imgs/componente1.webp'
 import {Componente1} from './Componente1.jsx'
 import {Bullet} from "./Listas.jsx";
@@ -9,6 +5,8 @@ import {FigRobert} from './FigRobert.jsx'
 import {FlechaComponents} from "./Flechas.jsx";
 import './App.css'
 import {Mecanografia} from "./mecanografia.jsx";
+import {EdComponente} from "./edComponente.jsx";
+import illustrator from './assets/imgs/logosPNG/des_adobeIllustrator.png'
 
 function App() {
 
@@ -16,47 +14,51 @@ function App() {
     return (
         <>
             <nav></nav>
-            <main>
-                <section className={'flex flex-row justify-center gap-4'}>
-                    <div className={'basis-2/5 '}>
-                        <FigRobert children={miFoto1}
-                        />
+            <main className={''}>
+                <section className={'grid grid-cols-2 gap-2'}>
 
+                    <div className={'row-span-2'}>
+                        <FigRobert/>
                     </div>
 
-                    <div className={'basis-3/5 mt-2'}>
-                        <Mecanografia
-                        />
-                        <div className={'block'}>
 
-                        <p className={'text-start text-sm'}>
+                    <div className={'mt-16'}>
+                        <div className={'row-span-2 shrink'}>
+                            <Mecanografia
+                                classname={'relative h-20'}
+                            />
+                        </div>
+
+
+                        <div className={' bottom-0'}>
+                            <p className={'text-start text-sm'}>
                             <span
-                                className={'bg-redRob rounded-full md:px-10 px-4 text-white font-sans text-xs'}>Robert Correa Toro</span>
-                        </p>
-                        <ul>
-                            <li className={'text-start text-sm text-redRob'}>ranireto@gmail.com</li>
-                            <li className={'text-start text-sm text-redRob'}>+569 7531 5683</li>
-                            <li className={'text-start text-sm text-redRob'}>Iquique, Chile</li>
-                        </ul>
-                        <span className={'flex-row flex'}>
-                            <FlechaComponents/>
-                            <FlechaComponents/>
-                            <FlechaComponents/>
-                        </span>
+                                className={'bg-redRob rounded-full md:px-10 px-2 font-sans text-xs'}>Robert Correa Toro</span>
+                            </p>
+                            <ul>
+                                <li className={'text-start text-sm text-redRob'}>ranireto@gmail.com</li>
+                                <li className={'text-start text-sm text-redRob'}>+569 7531 5683</li>
+                                <li className={'text-start text-sm text-redRob'}>Iquique, Chile</li>
+                            </ul>
+
+                            <div className={'flex flex-wrap'}>
+                                <FlechaComponents/>
+                                <FlechaComponents/>
+                                <FlechaComponents/>
+                            </div>
                         </div>
                     </div>
-
                 </section>
 
-                <p className={'text-blueRob text-start text-xs hidden'}>
-                    Me especializo en optimizar flujos de trabajo y en implementar soluciones visuales eficientes,
-                    orientadas a mejorar la productividad y la calidad en cada proyecto. </p>
 
                 <section className={''}>
-                    <Componente1
-                        children={ComponenteLineaAzul}
-                        className={'w-full'}
-                    />
+
+                    <div>
+                        <Componente1
+                            children={ComponenteLineaAzul}
+                        />
+                    </div>
+
                 </section>
 
 
@@ -89,7 +91,31 @@ function App() {
                         descripcion={'Me desempeñé como encargado del área de producción gráfica, donde implementé la automatización de procesos de impresión y diseño para optimizar la producción y venta de cuadros de graduación en grandes volúmenes.'}
                     />
 
-                    <div>Conocimientos</div>
+                </section>
+
+                <section>
+                    <div className={'row-auto'}>
+                        <EdComponente
+                            titulo={'Manejo de Software de Diseño'}
+                            img={illustrator}
+                            descripcion={'Adobe Illustrator'}
+                        />
+                        <EdComponente
+                            img={illustrator}
+                            descripcion={'Adobe Illustrator'}
+                        />
+                    </div>
+                    <div>
+                        <EdComponente
+                            img={illustrator}
+                            descripcion={'Adobe Illustrator'}
+                        />
+                        <EdComponente
+                            img={illustrator}
+                            descripcion={'Adobe Illustrator'}
+                        />
+                    </div>
+
                 </section>
 
             </main>
