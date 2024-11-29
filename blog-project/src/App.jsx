@@ -31,15 +31,15 @@ function App() {
         <>
             <nav></nav>
             <main className={''}>
-                <section className={'grid grid-cols-2 gap-2'}>
+                <section className={'gap-3 flex flex-wrap container justify-center'}>
 
-                    <div className={'row-span-2'}>
+                    <div className={'basis-36 md:basis-1/6 md:justify-items-center -mb-1'}>
                         <FigRobert/>
                     </div>
 
 
-                    <div className={'mt-16'}>
-                        <div className={'row-span-2 shrink'}>
+                    <div className={'mt-16 basis-1/4 md:basis-1/4'}>
+                        <div className={'md:text-7xl'}>
                             <Mecanografia
                                 classname={'relative h-20'}
                             />
@@ -66,161 +66,166 @@ function App() {
                     </div>
                 </section>
 
-                <div>
+                <div className={'block m-auto md:w-1/2'}>
                     <Componente1
                         children={ComponenteLineaAzul}
                     />
                 </div>
 
-                <section className={'grid-cols-2 grid gap-2'}>
-                    <div className={'col-span-2 gap-2'}>
-                        <h2 className={' text-3xl text-blueRob font-serif font-bold mt-4 text-start'}>
-                            Stack de Desarrollo</h2>
+                <div className={'md:flex md:flex-wrap md:gap-10 justify-center'}>
+                    <section className={'grid-cols-2 grid gap-2 md:w-1/3'}>
+                        <div className={'col-span-2 gap-2'}>
+                            <h2 className={' text-3xl text-blueRob font-serif font-bold mt-4 text-start'}>
+                                Stack de Desarrollo</h2>
 
-                        <div className={'flex flex-row pt-1 font-sans font-bold'}>
+                            <div className={'flex flex-row pt-1 font-sans font-bold'}>
                 <span className={'bg-redRob w-full rounded-full text-sm text-start ps-4'}>
                    Escribiendo ideas para colorear
                 </span>
+                            </div>
+
+                            <p className={'text-blackRob font-sans text-xs text-start font-light pt-1'}>Las herramientas
+                                mágicas
+                                que uso para dar vida a ideas y construir aplicaciones que realmente hacen clic (literal
+                                y
+                                figurativamente).</p>
                         </div>
 
-                        <p className={'text-blackRob font-sans text-xs text-start font-light pt-1'}>Las herramientas
-                            mágicas
-                            que uso para dar vida a ideas y construir aplicaciones que realmente hacen clic (literal y
-                            figurativamente).</p>
-                    </div>
+
+                        <EdComponente
+                            img={html}
+                            descripcion={'HTML 5'}
+                        />
+                        <EdComponente
+                            img={css}
+                            descripcion={'CSS3'}
+                        />
 
 
-                    <EdComponente
-                        img={html}
-                        descripcion={'HTML 5'}
-                    />
-                    <EdComponente
-                        img={css}
-                        descripcion={'CSS3'}
-                    />
+                        <EdComponente
+                            img={javascript}
+                            descripcion={'JavaScript'}
+                        />
+
+                        <EdComponente
+                            img={react}
+                            descripcion={'ReactJS'}
+                        />
+
+                        <EdComponente
+                            img={posgres}
+                            descripcion={'PostgreSQL'}
+                        />
+                        <EdComponente
+                            img={nodeJS}
+                            descripcion={'Node.js'}
+                        />
 
 
-                    <EdComponente
-                        img={javascript}
-                        descripcion={'JavaScript'}
-                    />
+                        <EdComponente
+                            img={github}
+                            descripcion={'GIT'}
+                        />
+                        <EdComponente
+                            img={tailwind}
+                            descripcion={'Tailwind CSS'}
+                        />
 
-                    <EdComponente
-                        img={react}
-                        descripcion={'ReactJS'}
-                    />
+                    </section>
 
-                    <EdComponente
-                        img={posgres}
-                        descripcion={'PostgreSQL'}
-                    />
-                    <EdComponente
-                        img={nodeJS}
-                        descripcion={'Node.js'}
-                    />
+                    <section id={'softwareStack'} className={'grid md:w-1/3'}>
 
+                        <div className={'col-span-2 gap-2 '}>
+                            <h2 className={' text-3xl text-blueRob font-serif font-bold mt-4 text-start'}>
+                                Stack de Diseño</h2>
 
-                    <EdComponente
-                        img={github}
-                        descripcion={'GIT'}
-                    />
-                    <EdComponente
-                        img={tailwind}
-                        descripcion={'Tailwind CSS'}
-                    />
-
-                </section>
-
-                <section id={'softwareStack'} className={'grid'}>
-
-                    <div className={'col-span-2 gap-2'}>
-                        <h2 className={' text-3xl text-blueRob font-serif font-bold mt-4 text-start'}>
-                            Stack de Diseño</h2>
-
-                        <div className={'flex flex-row pt-1 font-sans font-bold'}>
+                            <div className={'flex flex-row pt-1 font-sans font-bold'}>
                 <span className={'bg-redRob w-full rounded-full text-sm text-start ps-4'}>
                    Escribiendo ideas para colorear
                 </span>
+                            </div>
+
+                            <p className={'text-blackRob font-sans text-xs text-start font-light pt-1'}>Las herramientas
+                                mágicas
+                                que uso para dar vida a ideas y construir aplicaciones que realmente hacen clic (literal
+                                y
+                                figurativamente).</p>
                         </div>
+                        {/*<h2 className={'text-3xl text-blueRob font-serif font-bold mt-4 text-start'}>*/}
+                        {/*    Stack de Diseño</h2>*/}
+                        <div className={'col-span-2'}>
+                            <EdComponente
+                                img={illustrator}
+                                descripcion={'Adobe Illustrator'}
+                                estrellitas={'si'}
+                            />
+                            <EdComponente
+                                img={photoshop}
+                                descripcion={'Adobe Photoshop'}
+                                estrellitas={'si'}
+                            />
 
-                        <p className={'text-blackRob font-sans text-xs text-start font-light pt-1'}>Las herramientas
-                            mágicas
-                            que uso para dar vida a ideas y construir aplicaciones que realmente hacen clic (literal y
-                            figurativamente).</p>
-                    </div>
-                    {/*<h2 className={'text-3xl text-blueRob font-serif font-bold mt-4 text-start'}>*/}
-                    {/*    Stack de Diseño</h2>*/}
-                    <div className={'col-span-2'}>
-                        <EdComponente
-                            img={illustrator}
-                            descripcion={'Adobe Illustrator'}
-                            estrellitas={'si'}
-                        />
-                        <EdComponente
-                            img={photoshop}
-                            descripcion={'Adobe Photoshop'}
-                            estrellitas={'si'}
-                        />
+                            <EdComponente
+                                img={indesign}
+                                descripcion={'Adobe InDesign'}
+                                estrellitas={'si'}
+                            />
+                            <EdComponente
+                                img={premiere}
+                                descripcion={'Adobe Premiere'}
+                                estrellitas={'si'}
+                            />
+                        </div>
+                    </section>
+                </div>
 
-                        <EdComponente
-                            img={indesign}
-                            descripcion={'Adobe InDesign'}
-                            estrellitas={'si'}
-                        />
-                        <EdComponente
-                            img={premiere}
-                            descripcion={'Adobe Premiere'}
-                            estrellitas={'si'}
-                        />
-                    </div>
-                </section>
-
-                <section className={''}>
-
-
-                </section>
 
                 <div>
                     <Componente1
-                        className={'mt-5'}
+                        className={'mt-5 block m-auto md:w-1/2'}
                         children={ComponenteLineaAzul}
                     />
                 </div>
 
-                <section id={'educacionExperiencia'} className={'pt-1 gap-2'}>
-                    <Bullet
-                        titulo={'Educación'}
-                        fecha={'2013-2019'}
-                        tituloRojo={'Diseño gráfico profesional'}
-                        lugar={'Universidad Técn. de Chile INACAP'}
-                    />
+                <section id={'educacionExperiencia'} className={'pt-1 gap-2 md:flex md:flex-wrap md:gap-10 justify-center'}>
+<div className={'md:w-1/3'}>
 
-                    <Bullet
-                        fecha={'2024-Presente'}
-                        tituloRojo={'Desarrollo Full-Stack Javascript'}
-                        lugar={'Talento Digital - EDUTECNO'}
-                    />
+    <Bullet
+        titulo={'Educación'}
+        fecha={'2013-2019'}
+        tituloRojo={'Diseño gráfico profesional'}
+        lugar={'Universidad Técn. de Chile INACAP'}
+    />
 
-                    <Bullet
-                        titulo={'Experiencia'}
-                        fecha={'Junio - Noviembre 2024'}
-                        tituloRojo={'Director de operaciones'}
-                        lugar={'Power Fishing SPA (Independiente)'}
-                        descripcion={'Mi primer acercamiento fue con el objetivo de diseñar un catálogo y publicitar los productos mediante mejoras en la página web. A partir de ese proyecto, asumí una posición más amplia, gestionando ventas y administración, control de stock, despachos, y procesos comerciales.'}
-                    />
+    <Bullet
+        fecha={'2024-Presente'}
+        tituloRojo={'Desarrollo Full-Stack Javascript'}
+        lugar={'Talento Digital - EDUTECNO'}
+    />
+</div>
 
-                    <Bullet
-                        fecha={'Agosto 2023 a Enero 2024'}
-                        tituloRojo={'Encargado área de producción'}
-                        lugar={'Graduados.cl'}
-                        descripcion={'Me desempeñé como encargado del área de producción gráfica, donde implementé la automatización de procesos de impresión y diseño para optimizar la producción y venta de cuadros de graduación en grandes volúmenes.'}
-                    />
+                    <div className={'md:w-1/3'}>
+                        <Bullet
+                            titulo={'Experiencia'}
+                            fecha={'Junio - Noviembre 2024'}
+                            tituloRojo={'Director de operaciones'}
+                            lugar={'Power Fishing SPA (Independiente)'}
+                            descripcion={'Mi primer acercamiento fue con el objetivo de diseñar un catálogo y publicitar los productos mediante mejoras en la página web. A partir de ese proyecto, asumí una posición más amplia, gestionando ventas y administración, control de stock, despachos, y procesos comerciales.'}
+                        />
+
+                        <Bullet
+                            fecha={'Agosto 2023 a Enero 2024'}
+                            tituloRojo={'Encargado área de producción'}
+                            lugar={'Graduados.cl'}
+                            descripcion={'Me desempeñé como encargado del área de producción gráfica, donde implementé la automatización de procesos de impresión y diseño para optimizar la producción y venta de cuadros de graduación en grandes volúmenes.'}
+                        />
+                    </div>
 
                 </section>
 
 
             </main>
-            <footer >
+            <footer>
                 <div className={'mt-5 p-5 flex-wrap flex gap-4 justify-center'}>
 
                     <a href="#"> <img className={'w-8'} src={instagram} alt=""/></a>
@@ -228,8 +233,9 @@ function App() {
                     <a href="#"><img className={'w-8'} src={gitHub} alt=""/></a>
                 </div>
                 <p className={'text-center text-blackRob font-sans font-light text-sm'}>Hecho por mi mismo</p>
-                <a href="https://pokemondb.net/pokedex/meowth"><img  className={'w-12 m-auto'}
-                    src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/meowth.png" alt="Meowth"/></a></footer>
+                <a href="https://pokemondb.net/pokedex/meowth"><img className={'w-12 m-auto'}
+                                                                    src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/meowth.png"
+                                                                    alt="Meowth"/></a></footer>
         </>
     )
 }
