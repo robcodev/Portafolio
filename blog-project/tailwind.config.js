@@ -13,7 +13,8 @@ export default {
       colors: {
           'redRob': '#E84141',
           'blueRob': '#334D9D',
-          'blackRob': '#000000'
+          'blackRob': '#000000',
+          'brownRob': '#603324'
       },
     extend: {},
   },

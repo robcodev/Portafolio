@@ -7,6 +7,22 @@ import './App.css'
 import {Mecanografia} from "./mecanografia.jsx";
 import {EdComponente} from "./edComponente.jsx";
 import illustrator from './assets/imgs/logosPNG/des_adobeIllustrator.png'
+import photoshop from './assets/imgs/logosPNG/des_adobePhotoshop.png'
+import indesign from './assets/imgs/logosPNG/des_adobeIndesign.png'
+import premiere from './assets/imgs/logosPNG/des_adobePremiere.png'
+import figma from './assets/imgs/logosPNG/dev_figma.png'
+import html from './assets/imgs/logosPNG/dev_html5.png'
+import css from './assets/imgs/logosPNG/dev_css3.png'
+import javascript from './assets/imgs/logosPNG/dev_javaScript.png'
+import react from './assets/imgs/logosPNG/dev_react.png'
+import posgres from './assets/imgs/logosPNG/dev_postgres.png'
+import nodeJS from './assets/imgs/logosPNG/dev_nodeJS.png'
+import github from './assets/imgs/logosPNG/dev_git.png'
+import tailwind from './assets/imgs/logosPNG/dev_tailwind.png'
+import {FooterIconos} from "./footer.jsx";
+import instagram from './assets/imgs/logosFooter/Instagram_logo_2016.svg'
+import linkedIn from './assets/imgs/logosFooter/LinkedIn_icon.svg'
+import gitHub from './assets/imgs/logosFooter/github-mark.svg'
 
 function App() {
 
@@ -50,19 +66,128 @@ function App() {
                     </div>
                 </section>
 
+                <div>
+                    <Componente1
+                        children={ComponenteLineaAzul}
+                    />
+                </div>
 
-                <section className={''}>
+                <section className={'grid-cols-2 grid gap-2'}>
+                    <div className={'col-span-2 gap-2'}>
+                        <h2 className={' text-3xl text-blueRob font-serif font-bold mt-4 text-start'}>
+                            Stack de Desarrollo</h2>
 
-                    <div>
-                        <Componente1
-                            children={ComponenteLineaAzul}
-                        />
+                        <div className={'flex flex-row pt-1 font-sans font-bold'}>
+                <span className={'bg-redRob w-full rounded-full text-sm text-start ps-4'}>
+                   Escribiendo ideas para colorear
+                </span>
+                        </div>
+
+                        <p className={'text-blackRob font-sans text-xs text-start font-light pt-1'}>Las herramientas
+                            mágicas
+                            que uso para dar vida a ideas y construir aplicaciones que realmente hacen clic (literal y
+                            figurativamente).</p>
                     </div>
+
+
+                    <EdComponente
+                        img={html}
+                        descripcion={'HTML 5'}
+                    />
+                    <EdComponente
+                        img={css}
+                        descripcion={'CSS3'}
+                    />
+
+
+                    <EdComponente
+                        img={javascript}
+                        descripcion={'JavaScript'}
+                    />
+
+                    <EdComponente
+                        img={react}
+                        descripcion={'ReactJS'}
+                    />
+
+                    <EdComponente
+                        img={posgres}
+                        descripcion={'PostgreSQL'}
+                    />
+                    <EdComponente
+                        img={nodeJS}
+                        descripcion={'Node.js'}
+                    />
+
+
+                    <EdComponente
+                        img={github}
+                        descripcion={'GIT'}
+                    />
+                    <EdComponente
+                        img={tailwind}
+                        descripcion={'Tailwind CSS'}
+                    />
 
                 </section>
 
+                <section id={'softwareStack'} className={'grid'}>
 
-                <section className={'pt-1 gap-4'}>
+                    <div className={'col-span-2 gap-2'}>
+                        <h2 className={' text-3xl text-blueRob font-serif font-bold mt-4 text-start'}>
+                            Stack de Diseño</h2>
+
+                        <div className={'flex flex-row pt-1 font-sans font-bold'}>
+                <span className={'bg-redRob w-full rounded-full text-sm text-start ps-4'}>
+                   Escribiendo ideas para colorear
+                </span>
+                        </div>
+
+                        <p className={'text-blackRob font-sans text-xs text-start font-light pt-1'}>Las herramientas
+                            mágicas
+                            que uso para dar vida a ideas y construir aplicaciones que realmente hacen clic (literal y
+                            figurativamente).</p>
+                    </div>
+                    {/*<h2 className={'text-3xl text-blueRob font-serif font-bold mt-4 text-start'}>*/}
+                    {/*    Stack de Diseño</h2>*/}
+                    <div className={'col-span-2'}>
+                        <EdComponente
+                            img={illustrator}
+                            descripcion={'Adobe Illustrator'}
+                            estrellitas={'si'}
+                        />
+                        <EdComponente
+                            img={photoshop}
+                            descripcion={'Adobe Photoshop'}
+                            estrellitas={'si'}
+                        />
+
+                        <EdComponente
+                            img={indesign}
+                            descripcion={'Adobe InDesign'}
+                            estrellitas={'si'}
+                        />
+                        <EdComponente
+                            img={premiere}
+                            descripcion={'Adobe Premiere'}
+                            estrellitas={'si'}
+                        />
+                    </div>
+                </section>
+
+                <section className={''}>
+
+
+                </section>
+
+                <div>
+                    <Componente1
+                        className={'mt-5'}
+                        children={ComponenteLineaAzul}
+                    />
+                </div>
+
+                <section id={'educacionExperiencia'} className={'pt-1 gap-2'}>
                     <Bullet
                         titulo={'Educación'}
                         fecha={'2013-2019'}
@@ -93,36 +218,18 @@ function App() {
 
                 </section>
 
-                <section>
-                    <div className={'row-auto'}>
-                        <EdComponente
-                            titulo={'Manejo de Software de Diseño'}
-                            img={illustrator}
-                            descripcion={'Adobe Illustrator'}
-                        />
-                        <EdComponente
-                            img={illustrator}
-                            descripcion={'Adobe Illustrator'}
-                        />
-                    </div>
-                    <div>
-                        <EdComponente
-                            img={illustrator}
-                            descripcion={'Adobe Illustrator'}
-                        />
-                        <EdComponente
-                            img={illustrator}
-                            descripcion={'Adobe Illustrator'}
-                        />
-                    </div>
-
-                </section>
 
             </main>
-            <footer>
-                <div>Hecho por mi</div>
-                <div>iconos sociales</div>
-            </footer>
+            <footer >
+                <div className={'mt-5 p-5 flex-wrap flex gap-4 justify-center'}>
+
+                    <a href="#"> <img className={'w-8'} src={instagram} alt=""/></a>
+                    <a href="#"><img className={'w-8'} src={linkedIn} alt=""/></a>
+                    <a href="#"><img className={'w-8'} src={gitHub} alt=""/></a>
+                </div>
+                <p className={'text-center text-blackRob font-sans font-light text-sm'}>Hecho por mi mismo</p>
+                <a href="https://pokemondb.net/pokedex/meowth"><img  className={'w-12 m-auto'}
+                    src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/meowth.png" alt="Meowth"/></a></footer>
         </>
     )
 }

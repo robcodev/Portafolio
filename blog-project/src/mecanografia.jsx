@@ -3,7 +3,7 @@ import {useTypewriter} from "react-simple-typewriter";
 
 export const Mecanografia = ({classname}) => {
     const [palabras] = useTypewriter({
-        words: ['Diseñador Gráfico', 'Desarrollador Full Stack'],
+        words: ['Diseñador Gráfico', 'Full Stack Developer'],
         loop: false,
     })
     return <>
