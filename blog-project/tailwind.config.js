@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-      './index.html',
+      './cv.html',
       './src/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
@@ -14,9 +14,14 @@ export default {
           'redRob': '#E84141',
           'blueRob': '#334D9D',
           'blackRob': '#000000',
-          'brownRob': '#603324'
+          'brownRob': '#603324',
+          'whiteRob': '#FFFFFF'
       },
-    extend: {},
+    extend: {
+          aspectRatio: {
+              '4/3': '4/3',
+          }
+    },
   },
   plugins: [],
 }

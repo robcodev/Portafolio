@@ -1,5 +1,5 @@
-import miFoto1 from './assets/imgs/miFoto1.png'
-import miFoto2 from './assets/imgs/miFoto2.png'
+// import miFoto1 from '../../assets/imgs/miFoto1.png'
+import miFoto2 from '../assets/imgs/miFoto2.png'
 
 export function FigRobert() {
     return <>
