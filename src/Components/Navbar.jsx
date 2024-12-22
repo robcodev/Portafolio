@@ -41,7 +41,7 @@ export function Navbar() {
 
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-                    <Link to="/" className="text-sm/6 font-semibold text-gray-900">
+                    <Link to="/public" className="text-sm/6 font-semibold text-gray-900">
                         Index
                     </Link>
                     <Link to='/portfolio' className="text-sm/6 font-semibold text-gray-900">
@@ -84,7 +84,7 @@ export function Navbar() {
                             <div className="space-y-2 py-6">
 
                                 <Link
-                                    to="/#"
+                                    to="/public#"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                                 >
                                     Index

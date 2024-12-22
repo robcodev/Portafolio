@@ -4,13 +4,13 @@
 
 @font-face {
     font-family: 'Recoleta', Serif;
-    src: url('/blog-project/src/assets/fonts/Recoleta-Regular.ttf');
+    src: url('/src/Recoleta-Regular.ttf');
     font-weight: 400;
 
 }
 @font-face {
     font-family: 'Recoleta Bold';
-    src: url('/blog-project/src/assets/fonts/Recoleta-Bold.ttf');
+    src: url('/src/Recoleta-Bold.ttf');
     font-weight: 700;
 }
 @font-face {
