@@ -41,7 +41,7 @@ export function Navbar() {
 
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-                    <Link to="/public" className="text-sm/6 font-semibold text-gray-900">
+                    <Link to="/" className="text-sm/6 font-semibold text-gray-900">
                         Index
                     </Link>
                     <Link to='/portfolio' className="text-sm/6 font-semibold text-gray-900">
