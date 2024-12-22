@@ -18,7 +18,7 @@ import github from '../assets/imgs/logosPNG/dev_git.png'
 import tailwind from '../assets/imgs/logosPNG/dev_tailwind.png'
 import {Rayita} from "../Components/rayita.jsx";
 
-function CVitae() {
+function Contacto() {
 
 
     return (
@@ -210,4 +210,4 @@ function CVitae() {
     )
 }
 
-export default CVitae
+export default Contacto

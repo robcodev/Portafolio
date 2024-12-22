@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.1 40.97">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #d64d5a;
+        font-family: Recoleta-Black, Recoleta;
+        font-size: 34px;
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(0 29.07)"><tspan class="cls-3" x="0" y="0">R</tspan><tspan class="cls-1" x="23.32" y="0">obCo</tspan></text>
+</svg>

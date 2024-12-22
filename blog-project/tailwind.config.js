@@ -15,7 +15,7 @@ export default {
           'blueRob': '#334D9D',
           'blackRob': '#000000',
           'brownRob': '#603324',
-          'whiteRob': '#FFFFFF'
+          'whiteRob': '#FAF7EB',
       },
     extend: {
           aspectRatio: {
