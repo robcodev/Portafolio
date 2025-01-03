@@ -1,6 +1,4 @@
 import Marquee from 'react-fast-marquee'
-import {motion} from 'motion/react'
-import gato from '../../../../Downloads/FOTOGATO.jpg'
 
 export const TextMarquee = () => {
 
