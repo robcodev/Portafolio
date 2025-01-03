@@ -1,6 +1,5 @@
 import {useTypewriter} from "react-simple-typewriter";
 
-
 export const Mecanografia = () => {
     const [palabras] = useTypewriter({
         words: [`Diseñador\nGráfico`, `Full Stack\nDeveloper`],
