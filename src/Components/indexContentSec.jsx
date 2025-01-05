@@ -35,7 +35,7 @@ const IndexContentSec = () => {
                 </figure>
 
                 <figure
-                    className={'border-redRob border-2 p-6 text-start'}>
+                     className={'border-redRob border-2 p-6 text-start'}>
                 <h3
                         className={'text-xl font-bold mb-2'}>
                         Diseño

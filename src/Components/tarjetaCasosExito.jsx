@@ -6,6 +6,8 @@ import html from '../assets/imgs/logosPNG/dev_html5.png'
 import js from '../assets/imgs/logosPNG/dev_javaScript.png'
 import react from '../assets/imgs/logosPNG/dev_react.png'
 import {motion} from 'motion/react'
+import zomoNewen from '../assets/imgs/portfolioImgs/DestacadoZomoNewen1.jpg'
+
 
 const TarjetaCasosExito = () => {
 
@@ -14,11 +16,13 @@ const TarjetaCasosExito = () => {
             <section className="grid grid-cols-2 gap-12  mb-10 p-24 ">
                 <div>
 
-                    <figure
+                    <img
+                        alt="logo"
+                        src={zomoNewen}
                         className="aspect-4/3 bg-redRob rounded-lg"
-                    >
-                        {}
-                    </figure>
+                    />
+
+
 
                     <p
                         className={'text-xs text-blackRob mb-4 mt-6 text-start'}
