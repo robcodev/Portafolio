@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import tailwindcss from "../assets/imgs/logosPNG/dev_tailwind.png";
 import flecha from '../assets/imgs/flechaComponent.svg'
 import figma from '../assets/imgs/logosPNG/dev_figma.png'

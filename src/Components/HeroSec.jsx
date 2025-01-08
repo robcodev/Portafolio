@@ -9,7 +9,7 @@ const HeroSec = () => {
 
                 </a>
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl text-redRob">
-                    Soy desarrollador full stack y desarrollador multimedia.
+                    Soy desarrollador full stack y diseñador multimedia.
                 </h1>
                 <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 text-blackRob">
                     Ayudo a las empresas a vender en medios digitales.</p>
