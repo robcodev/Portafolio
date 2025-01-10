@@ -6,9 +6,8 @@ export default {
   ],
   theme: {
       fontFamily: {
-          'sans': ['azo-mono', 'sans-serif'],
-
-          'serif': ['recoleta', 'serif']
+          'sans': ['Anton SC', 'sans-serif'],
+          'mono': ['azo-mono', 'monospace']
       },
       colors: {
           'redRob': '#E84141',

@@ -1,47 +1,26 @@
 import instagram from "../assets/imgs/logosFooter/Instagram_logo_2016.svg";
 import linkedIn from "../assets/imgs/logosFooter/LinkedIn_icon.svg";
 import gitHub from "../assets/imgs/logosFooter/github-mark.svg";
-import {Link} from "react-router-dom";
-
 
 export function Footer() {
-
-    //         <p className={'text-center text-blackRob font-sans font-light text-sm'}>Hecho por mi mismo</p>
-    //         <img className={'w-12 m-auto'} src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/meowth.png"
-    //              alt="Meowth"/>
 
     return (
 
         <footer className="pt-6 ">
-            <div className="mx-auto max-w-screen-xl text-center">
+            <hr className="border-b-2 my-4"/>
 
-                <ul className="flex flex-wrap justify-center items-center font-bold">
-                    <li>
-                        <Link to="/" className="gap-2 hover:underline md:mr-6 ">Index</Link>
-                    </li>
-                    <li>
-                        <Link to="/portfolio" className="gap-2 hover:underline md:mr-6">Portfolio</Link>
-                    </li>
-                    <li>
-                        <Link to="/blog" className="gap-2 hover:underline md:mr-6 ">Blog</Link>
-                    </li>
-                </ul>
-
-                <div className={' p-5 flex-wrap flex gap-4 justify-center lg:absolute lg:right-8'}>
-
-                    <a href="#"> <img className={'w-6'} src={instagram} alt=""/></a>
-                    <a href="#"><img className={'w-6'} src={linkedIn} alt=""/></a>
-                    <a href="#"><img className={'w-6'} src={gitHub} alt=""/></a>
-                </div>
-
-
-                <span className="text-xs text-blackRob sm:text-center">© 2024-2025
+            <div className="mx-auto max-w-screen-xl text-center flex justify-between">
+                <h5 className="text-xs text-blackRob sm:text-center font-mono">© 2024-2025&nbsp;
                     <a href="#"
-                       className="hover:underline"> Robert Correa Toro</a>. Todos los derechos reservados.</span>
+                       className="hover:underline">
+                        Robert Correa Toro</a>. Todos los derechos reservados.</h5>
+
+                <div className={' flex gap-4'}>
+                    <a href="https://www.instagram.com/diseno_corto"> <img className={'w-6'} src={instagram} alt=""/></a>
+                    <a href="https://www.linkedin.com/in/robertcorreat/"><img className={'w-6'} src={linkedIn} alt=""/></a>
+                    <a href="https://github.com/Rob-Comp"><img className={'w-6'} src={gitHub} alt=""/></a>
+                </div>
             </div>
-
-
         </footer>
-
     )
 }

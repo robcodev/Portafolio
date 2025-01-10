@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import supabase from "../utils/supabase.js";
+import supabase from "../../utils/supabase.js";
 
 const IndexContentSec = () => {
 

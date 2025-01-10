@@ -3,23 +3,18 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Recoleta', Serif;
-    src: url('/src/Recoleta-Regular.ttf');
+    font-family: 'Anton SC', sans-serif;
     font-weight: 400;
+    font-style: normal;
+}
 
-}
 @font-face {
-    font-family: 'Recoleta Bold';
-    src: url('/src/Recoleta-Bold.ttf');
-    font-weight: 700;
-}
-@font-face {
-    font-family: "azo-mono", sans-serif;
+    font-family: "azo-mono", monospace;
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: "azo-mono", sans-serif;
+    font-family: "azo-mono", monospace;
     font-weight: 300;
 }
 * {
@@ -38,4 +33,7 @@ span{
 }
 .flechas{
     width: 10%;
+}
+textarea:focus, input:focus{
+    outline: none;
 }

@@ -8,7 +8,7 @@ import {
     Bars3Icon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
-import logoRob from '../assets/imgs/logos/robCoLogo.svg'
+import logoRob from '../../assets/imgs/logos/robCoLogo.svg'
 import {Link} from "react-router-dom";
 
 
@@ -41,10 +41,10 @@ export function Navbar() {
 
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-                    <Link to="/" className="text-sm/6 font-semibold text-gray-900">
+                    <Link to="/public" className="text-sm/6 font-semibold text-gray-900">
                         Index
                     </Link>
-                    <Link to='/portfolio' className="text-sm/6 font-semibold text-gray-900">
+                    <Link to='/src/pages/portafolio' className="text-sm/6 font-semibold text-gray-900">
                         Portafolio
                     </Link>
                     <Link to='/blog' className="text-sm/6 font-semibold text-gray-900">
@@ -84,13 +84,13 @@ export function Navbar() {
                             <div className="space-y-2 py-6">
 
                                 <Link
-                                    to="/"
+                                    to="/public"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                                 >
                                     Index
                                 </Link>
                                 <Link
-                                    to="/portfolio"
+                                    to="/src/pages/portafolio"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                                 >
                                     Portafolio

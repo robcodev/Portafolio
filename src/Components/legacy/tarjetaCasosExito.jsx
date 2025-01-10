@@ -1,11 +1,11 @@
-import tailwindcss from "../assets/imgs/logosPNG/dev_tailwind.png";
-import flecha from '../assets/imgs/flechaComponent.svg'
-import figma from '../assets/imgs/logosPNG/dev_figma.png'
-import html from '../assets/imgs/logosPNG/dev_html5.png'
-import js from '../assets/imgs/logosPNG/dev_javaScript.png'
-import react from '../assets/imgs/logosPNG/dev_react.png'
+import tailwindcss from "../../assets/imgs/logosPNG/dev_tailwind.png";
+import flecha from '../../assets/imgs/flechaComponent.svg'
+import figma from '../../assets/imgs/logosPNG/dev_figma.png'
+import html from '../../assets/imgs/logosPNG/dev_html5.png'
+import js from '../../assets/imgs/logosPNG/dev_javaScript.png'
+import react from '../../assets/imgs/logosPNG/dev_react.png'
 import {motion} from 'motion/react'
-import zomoNewen from '../assets/imgs/portfolioImgs/DestacadoZomoNewen1.jpg'
+import zomoNewen from '../../assets/imgs/portfolioImgs/DestacadoZomoNewen1.jpg'
 
 
 const TarjetaCasosExito = () => {
