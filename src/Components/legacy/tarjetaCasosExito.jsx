@@ -1,5 +1,5 @@
 import tailwindcss from "../../assets/imgs/logosPNG/dev_tailwind.png";
-import flecha from '../../assets/imgs/flechaComponent.svg'
+import flecha from '../../assets/flechaComponent.svg'
 import figma from '../../assets/imgs/logosPNG/dev_figma.png'
 import html from '../../assets/imgs/logosPNG/dev_html5.png'
 import js from '../../assets/imgs/logosPNG/dev_javaScript.png'
