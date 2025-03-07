@@ -42,7 +42,7 @@ export default function Portafolio() {
                 projects.map((project, index) => (
 
                     <section key={index} className={'grid-cols-1 gap-4'}>
-                        <Link to={`/portafolio/${project.url}`}>
+                        {/*<Link to={`/portafolio/${project.url}`}>*/}
                             <div>
                                 <img
                                     src={project.img}
@@ -58,8 +58,9 @@ export default function Portafolio() {
 
 
                             </div>
-                        </Link>
+                        {/*</Link>*/}
                     </section>
+
 
                     // <div key={index} className={'last:mb-0'}>
                     //     <Link to={`/portafolio/${project.url}`}>

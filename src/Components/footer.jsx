@@ -6,11 +6,11 @@ export function Footer() {
 
     return (
 
-        <footer className={''}>
+        <footer className={'mt-4'}>
             <div className={'inline-flex justify-center items-center gap-4 mb-4'}>
                 <a href="https://www.instagram.com/diseno_corto"> <img className={'w-5'} src={instagram} alt=""/></a>
                 <a href="https://www.linkedin.com/in/robertcorreat/"><img className={'w-5'} src={linkedIn} alt=""/></a>
-                <a href="https://github.com/Rob-Comp"><img className={'w-5'} src={gitHub} alt=""/></a>
+                <a href="https://github.com/robcodev"><img className={'w-5'} src={gitHub} alt=""/></a>
             </div>
 
             <div className="mx-auto text-center">
