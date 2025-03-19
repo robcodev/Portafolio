@@ -1,45 +1,44 @@
 body {
     margin: 0 auto;
-    padding: 2rem;
     text-align: center;
     width: 100%;
-    min-height: calc(100vh);
     display: flex;
     flex-direction: column;
+    background-color: black;
+    height: 100lvh;
+}
 
+main {
+    padding-left: 15%;
+    padding-right: 15%;
 }
-footer {
-    margin-top: auto;
-}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Anton SC', sans-serif;
+.text-anton {
+    font-family: "Anton SC", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "azo-mono", monospace;
-    font-weight: 400;
+
+.text-handjet-regular {
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 470;
     font-style: normal;
+    font-variation-settings: "ELGR" 1,
+    "ELSH" 2;
 }
 
-* {
+.text-handjet-bold {
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "ELGR" 1,
+    "ELSH" 2;
 }
 
-html, body {
-    background-color: #FAF7EB;
-    padding-left: 10%;
-    padding-right: 10%;
-
-}
-
-.flechas{
-    width: 10%;
-}
-textarea:focus, input:focus{
-    outline: none;
-}

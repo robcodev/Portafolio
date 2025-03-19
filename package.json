@@ -24,7 +24,9 @@
     "react-fast-marquee": "^1.6.5",
     "react-router-dom": "^7.0.2",
     "react-simple-typewriter": "^5.0.1",
-    "sequelize": "^6.37.5"
+    "sequelize": "^6.37.5",
+    "tailwind-scrollbar-hide": "^2.0.0",
+    "three": "^0.174.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

@@ -1,9 +1,4 @@
-import {Bullet} from "../Components/legacy/Listas.jsx";
-import {FigRobert} from '../Components/legacy/FigRobert.jsx'
-import {FlechaComponents} from "../Components/legacy/Flechas.jsx";
 import '../App.css'
-import {Mecanografia} from "../Components/legacy/mecanografia.jsx";
-import {EdComponente} from "../Components/legacy/edComponente.jsx";
 import illustrator from '../assets/imgs/logosPNG/des_adobeIllustrator.png'
 import photoshop from '../assets/imgs/logosPNG/des_adobePhotoshop.png'
 import indesign from '../assets/imgs/logosPNG/des_adobeIndesign.png'
@@ -16,7 +11,6 @@ import posgres from '../assets/imgs/logosPNG/dev_postgres.png'
 import nodeJS from '../assets/imgs/logosPNG/dev_nodeJS.png'
 import github from '../assets/imgs/logosPNG/dev_git.png'
 import tailwind from '../assets/imgs/logosPNG/dev_tailwind.png'
-import {Rayita} from "../Components/legacy/rayita.jsx";
 
 function Contacto() {
 

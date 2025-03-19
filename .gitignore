@@ -23,6 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 .env.local
-
-#Archivos antiguos
-/src/Components/legacy/

@@ -27,7 +27,7 @@ export default function Portafolio() {
     return (
         <>
             <section className="w-full grid">
-                <div className={'mt-14 mb-6 flex grid-cols-2'}>
+                <div className={'mt-14 mb-6 flex grid-cols-2 sm:grid-cols-1'}>
                     <h1 className={'text-start text-redRob text-6xl lowercase'}>PORTAFOLIO</h1>
                     <p className={'text-start font-mono text-blueRob text-md leading-none pt-2 ps-4 '}>
                         Desde identidad visual hasta desarrollo full stack, combino diseño y código para construir experiencias funcionales y atractivas.
