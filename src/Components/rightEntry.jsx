@@ -1,4 +1,4 @@
-import {useRef, useState} from "react";
+import {useState} from "react";
 import {motion, AnimatePresence} from "framer-motion";
 
 const projects = [
@@ -11,24 +11,25 @@ const projects = [
 export default function RightEntry() {
 
     const [index, setIndex] = useState(0);
+    const [scroll, setScroll] = useState(false);
 
-    const nextProject = () => {
-        setIndex((prevIndex) => (prevIndex + 1) % projects.length);
-    }
+    const handleScroll = (e) => {
+        if (scroll) return;
 
-    const prevProject = () => {
-        setIndex((prevIndex) =>
-            prevIndex === 0 ? projects.length - 1 : prevIndex - 1
-        )
+        setScroll(true);
+
+        if (e.deltaY > 0){
+            setIndex((prevIndex) => (prevIndex + 1) % projects.length);
+        } else {
+            setIndex((prevIndex) => (prevIndex === 0 ? projects.length - 1 : prevIndex - 1));
+        }
+        setTimeout(()=> setScroll(false), 600);
     }
 
     return (
         <>
             <section className={'overflow-y-scroll scrollbar-hide col-span-2 bg-whiteRob rounded p-6 h-[100%] '}
-                     onWheel={(e) => {
-                         if (e.deltaY > 0) nextProject();
-                         else prevProject();
-                     }}>
+                     onWheel={handleScroll}>
 
                 <AnimatePresence mode="wait">
                     <motion.div
