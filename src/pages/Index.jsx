@@ -5,7 +5,7 @@ export default function Index() {
 
     return (
         <>
-            <main className={'grid grid-cols-3 h-screen gap-4 content-center'}>
+            <main className={'grid grid-cols-3 h-screen gap-10 content-center'}>
                         <LeftEntry/>
                         <RightEntry/>
             </main>
