@@ -1,7 +1,3 @@
-import linkedIn from '../assets/imgs/iconFooter/linkedIn.png'
-import arrow from '../assets/imgs/iconFooter/arrow.png'
-import blog from '../assets/imgs/iconFooter/blog.png'
-import github from '../assets/imgs/iconFooter/gitHub.png'
 import supabase from "../utils/supabase.js";
 import {useEffect, useState} from "react";
 
