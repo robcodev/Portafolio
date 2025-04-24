@@ -1,42 +1,31 @@
 import { DotButton, useDotButton } from './carruselUtils.jsx'
 import useEmblaCarousel from 'embla-carousel-react'
-import
+import slide1 from '../assets/imgs/heroSec.jpg'
+import Autoplay from "embla-carousel-autoplay";
 
-const EmblaCarousel = (props) => {
-    const { slides, options } = props
-    const [emblaRef, emblaApi] = useEmblaCarousel(options)
-
-    const { selectedIndex, scrollSnaps, onDotButtonClick } =
-        useDotButton(emblaApi)
+export default function EmblaCarousel(){
+    const [emblaRef] = useEmblaCarousel({
+        loop: true,
+        skipSnaps: true,
+    },[Autoplay({
+        delay: 4000
+    })]);
 
     return (
-        <section className="embla">
-            <div className="embla__viewport" ref={emblaRef}>
-                <div className="embla__container">
-                    {slides.map((index) => (
-                        <div className="embla__slide" key={index}>
-                            <img src="" alt=""/>
-                            <div className=" text-whiteRob">{index + 1}</div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+        <>
+        <div className={'overflow-hidden'} ref={emblaRef}>
+            <div className={'flex [&>div]:flex-[0_0_100%] [&>div]:rounded gap-4 '}>
+                <div className={'  h-72 border-whiteRob'}>
+                    <picture>
 
-            <div className="embla__controls">
-                <div className="embla__dots ">
-                    {scrollSnaps.map((_, index) => (
-                        <DotButton
-                            key={index}
-                            onClick={() => onDotButtonClick(index)}
-                            className={'embla__dot'.concat(
-                                index === selectedIndex ? ' embla__dot--selected' : ''
-                            )}
-                        />
-                    ))}
+                        <img className={'w-full h-full object-cover rounded'} src={slide1} alt=""/>
+                    </picture>
                 </div>
+
+                <div className={' bg-whiteRob h-72 border-whiteRob'}>Slide 2</div>
+                <div className={' bg-whiteRob h-72 border-whiteRob'}>Slide 3</div>
             </div>
-        </section>
+        </div>
+        </>
     )
 }
-
-export default EmblaCarousel

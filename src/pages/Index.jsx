@@ -77,7 +77,7 @@ export default function Index() {
                         </a>
                     </div>
                     {/*    carrusel? ? */}
-                    <EmblaCarousel slides={SLIDES} options={OPTIONS}/>
+                    <EmblaCarousel/>
                 </section>
 
                 <SobreMi/>
