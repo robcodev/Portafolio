@@ -2,7 +2,7 @@ export default function Blog(){
     return(
         <>
             <section className={' my-4'}>
-                <h3 className={'text-whiteRob text-3xl text-start text-handjet-bold'}>
+                <h3 className={'text-whiteRob text-3xl text-start text-handjet-bold my-4'}>
                     / Blog
                 </h3>
                 <div className={''}>

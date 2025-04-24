@@ -1,16 +1,22 @@
 import githubIcon from "../assets/imgs/gitHub.png"
 import linkedinIcon from "../assets/imgs/linkedIn.png"
+import heroSec from "../assets/imgs/heroSec.jpg";
+import flechaIcon from '../assets/imgs/flechaComponent1.png'
 
 
 import Proyectos from "../Components/proyectos.jsx";
 import Blog from "../Components/blog.jsx";
 import SobreMi from "../Components/sobreMi.jsx";
+import EmblaCarousel from "../Components/carrusel.jsx";
 
 export default function Index() {
 
+    const OPTIONS = {dragFree: true, loop: true};
+    const SLIDE_COUNT = 5;
+    const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
     return (
         <>
-            <main className={'py-14'}>
+            <main className={'xl:px-72 py-12'}>
                 <section>
                     <div className={'flex justify-between mb-4'}>
                         <h2
@@ -20,23 +26,35 @@ export default function Index() {
 
                     </div>
 
-                    <h1 className={'text-redRob text-anton text-4xl text-start'}>UX/UI DESIGNER && FULL STACK
-                        DEVELOPER</h1>
-                    <p className={'text-whiteRob text-md text-handjet-regular text-start leading-tight'}>
-                        Especializado en crear experiencias digitales accesibles, escalables y visualmente
-                        impactantes.
-                    </p>
-                    <h3 className={'uppercase text-center rounded-full text-[#070914] text-anton my-4 p-1 bg-whiteRob'}>
-                        Proyectos</h3>
 
-                    {/*    carrusel? ? */}
-                    <img
-                        className={'rounded-lg border-whiteRob border h-72 w-full'}
-                        src="" alt=""/>
+                    <div className={'my-16'}>
+                        <div className={'flex justify-between w-full gap-8'}>
+                            <h1 className={'text-redRob text-nowrap text-anton text-8xl text-start'}>UX/UI DESIGNER &&</h1>
+                            <a className={'w-full rounded-full flex gap-4 items-center justify-center '}
+                                href="">
+                                <h3 className={'uppercase text-4xl text-center bg-whiteRob rounded-full w-full h-fit text-[#070914] text-anton my-4 p-3.5 '}>Ver Portafolio</h3>
+                                <picture>
+                                    <img
+                                        className={'h-full w-full'}
+                                        src={flechaIcon} alt="flecha"/>
+                                </picture>
+                            </a>
 
-                    <div className={'grid grid-cols-2 gap-2 my-4'}>
-                        <a className={'flex w-full rounded-full justify-center items-center bg-whiteRob px-2 py-1'}
-                            href="#">
+                        </div>
+                        <div className={'flex justify-between w-full gap-8 mb-4'}>
+                            <p className={'text-whiteRob text-lg text-handjet-regular text-start leading-tight'}>
+                                Me gusta hacer cosas, de comienzo a fin.
+                            </p>
+                            <h2 className={'text-redRob text-nowrap text-anton text-8xl text-end'}>FULL STACK
+                                DEVELOPER</h2>
+                        </div>
+                    </div>
+
+
+
+                    <div className={'grid grid-cols-3 gap-2 my-4'}>
+                        <a className={'flex w-full rounded-full justify-center items-center bg-whiteRob px-2 py-1 hover:bg-blackRob transition'}
+                           href="#">
                             <img
                                 src={githubIcon}
                                 alt={''}
@@ -44,14 +62,22 @@ export default function Index() {
                         </a>
 
                         <a className={'flex w-full rounded-full justify-center items-center bg-whiteRob px-2 py-1'}
-                            href="#">
+                           href="#">
+                            <img
+                                src={linkedinIcon}
+                                alt={''}
+                                className={'rounded'}/>
+                        </a>
+                        <a className={'flex w-full rounded-full justify-center items-center bg-whiteRob px-2 py-1'}
+                           href="#">
                             <img
                                 src={linkedinIcon}
                                 alt={''}
                                 className={'rounded'}/>
                         </a>
                     </div>
-
+                    {/*    carrusel? ? */}
+                    <EmblaCarousel slides={SLIDES} options={OPTIONS}/>
                 </section>
 
                 <SobreMi/>

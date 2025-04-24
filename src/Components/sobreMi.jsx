@@ -1,7 +1,7 @@
 export default function SobreMi() {
     return (
         <>
-            <section>
+            <section className={'mt-24'}>
                 <h3 className={'text-whiteRob text-3xl text-start text-handjet-bold'}>
                     / Sobre mi
                 </h3>
