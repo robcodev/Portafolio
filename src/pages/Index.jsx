@@ -16,23 +16,25 @@ export default function Index() {
     const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
     return (
         <>
-            <main className={'xl:px-72 py-12'}>
-                <section>
-                    <div className={'flex justify-between mb-4'}>
-                        <h2
-                            className={'uppercase text-3xl text-start text-whiteRob text-handjet-bold leading-[1em]'}>
-                            Robert <br/> Correa <br/> Toro
-                        </h2>
+            <main className={'xl:px-72 '}>
 
-                    </div>
+                <div className={'flex justify-between my-8'}>
+                    <h2
+                        className={'uppercase text-3xl text-start text-whiteRob text-handjet-bold leading-[1em]'}>
+                        Robert <br/> Correa <br/> Toro
+                    </h2>
 
+                </div>
+                <section className={'my-24'}>
 
-                    <div className={'my-16'}>
+                    <div className={' '}>
                         <div className={'flex justify-between w-full gap-8'}>
-                            <h1 className={'text-redRob text-nowrap text-anton text-8xl text-start'}>UX/UI DESIGNER &&</h1>
+                            <h1 className={'text-redRob text-nowrap text-anton text-8xl text-start'}>UX/UI DESIGNER
+                                &&</h1>
                             <a className={'w-full rounded-full flex gap-4 items-center justify-center '}
-                                href="">
-                                <h3 className={'uppercase text-4xl text-center bg-whiteRob rounded-full w-full h-fit text-[#070914] text-anton my-4 p-3.5 '}>Ver Portafolio</h3>
+                               href="">
+                                <h3 className={'uppercase text-4xl text-center bg-whiteRob rounded-full w-full h-fit text-[#070914] text-anton my-4 p-3.5 '}>Ver
+                                    Portafolio</h3>
                                 <picture>
                                     <img
                                         className={'h-full w-full'}
@@ -49,7 +51,6 @@ export default function Index() {
                                 DEVELOPER</h2>
                         </div>
                     </div>
-
 
 
                     <div className={'grid grid-cols-3 gap-2 my-4'}>
