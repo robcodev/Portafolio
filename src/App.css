@@ -6,12 +6,11 @@ body {
     flex-direction: column;
     background-color: #070914;
     height: 100lvh;
-}
-
-main {
     padding-left: 8%;
     padding-right: 8%;
 }
+
+
 
 @tailwind base;
 @tailwind components;

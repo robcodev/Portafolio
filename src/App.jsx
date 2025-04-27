@@ -6,21 +6,19 @@ import Portafolio from "./pages/portafolio.jsx";
 import {NotFound} from "./pages/404.jsx";
 import ProjectPage from "./pages/DynamicPortfolio.jsx";
 import Index from "./pages/Index.jsx";
-import Blog from "./pages/Blog.jsx";
+import BlogDashboard from "./pages/blog.jsx";
 
 function App() {
 
     return (
         <Router>
             <Routes>
-                <Route element={<Layout/>}>
                     <Route path="/" element={<Index/>}/>
                     <Route path="/portafolio" element={<Portafolio/>}/>
-                    <Route path="/blog" element={<Blog/>}/>
+                    <Route path="/blog" element={<BlogDashboard/>}/>
                     <Route path="/contacto" element={<Contacto/>}/>
                     <Route path="/portafolio/:projectId" element={<ProjectPage/>}/>
                     <Route path='*' element={<NotFound/>}/>
-                </Route>
 
             </Routes>
         </Router>
