@@ -1,0 +1,29 @@
+.simple-image input {
+    background-color: #070914;
+    color: white;
+    font-family: "Handjet", sans-serif;
+}
+
+.simple-image [contenteditable] {
+    color: white;
+    font-family: "Handjet", sans-serif;
+}
+
+.simple-image.withBorder img {
+    border: 1px solid white;
+}
+
+.simple-image.withBackground {
+    background-color: white;
+    padding: 10px;
+}
+
+.simple-image.withBackground img {
+    display: block;
+    max-width: 60%;
+    margin: 0 auto 15px;
+}
+
+.simple-image.stretched img {
+    width: 100%;
+}

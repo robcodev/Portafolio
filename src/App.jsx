@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import './blogDashboard.css'
 import {HashRouter as Router, Routes, Route} from "react-router-dom";
 import Contacto from "./pages/contacto.jsx";
 import {Layout} from "./Layout.jsx";
