@@ -16,7 +16,7 @@ export default function Header(){
                             className={'hover:font-bold uppercase cursor-pointer'}
                             href={'#'}>Proyectos</Link>
                         <Link
-                            to={'/blog'}
+                            to={'/src/pages/admin/blog.jsx'}
                             className={'hover:font-bold uppercase cursor-pointer'}
                         >Blog</Link>
                         <a

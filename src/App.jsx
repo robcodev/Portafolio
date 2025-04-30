@@ -7,7 +7,7 @@ import Portafolio from "./pages/portafolio.jsx";
 import {NotFound} from "./pages/404.jsx";
 import ProjectPage from "./pages/DynamicPortfolio.jsx";
 import Index from "./pages/Index.jsx";
-import BlogDashboard from "./pages/blog.jsx";
+import BlogDashboard from "./pages/admin/blog.jsx";
 
 function App() {
 
